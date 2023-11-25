@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-1 {
+    background-color: yellowgreen;
+}
+
+.item-2 {
+    background-color: rgb(255, 136, 0);
+}
+
+.item-3 {
+    background-color: rgb(0, 183, 255);
+}
+
+.item-4 {
+    background-color: rgb(255, 0, 128);
+}
+
+.kotak {
+    height: 670px;
+    width: 200px;
+    border: solid;
+}
