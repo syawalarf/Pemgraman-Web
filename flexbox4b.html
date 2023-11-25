@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 8.4 b</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: orange;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header{
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            height: 500px;
+        }
+
+        aside{
+            background-color: aquamarine;
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: #00ff2a;
+            flex: 3;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        img{
+            padding: 20px;
+        }
+
+        footer{
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        
+        <main>
+            <aside>Aside</aside>
+            <article>
+                <img src="https://nurulfikri.ac.id/wp-content/uploads/2022/06/cropped-Main-Logo-STTNF.png" width="100px" alt="CSS LOGOO">
+                <img src="https://nurulfikri.ac.id/wp-content/uploads/2022/06/cropped-Main-Logo-STTNF.png" width="100px" alt="CSS LOGOO">
+                <img src="https://nurulfikri.ac.id/wp-content/uploads/2022/06/cropped-Main-Logo-STTNF.png" width="100px" alt="CSS LOGOO">
+            </article>
+        </main>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
