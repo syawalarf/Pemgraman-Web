@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS SEMESTER 1</title>
+    <link rel="stylesheet" href="">
+    <style>
+        h3 {
+            margin-left: 80px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:"#87FFF00";
+        }
+
+        fieldset {
+            align-items: center;
+        }
+        #tabel {
+            width: 30%;
+        }
+
+    </style>
+</head>
+<body bgcolor: aqua;>
+    <h3>Regristrasi Kendaraan Anda</h3>
+    <a href=""></a>
+    <form action="" method="">
+    <fieldset id="tabel">
+        <label for="st" class="st">Status</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" value="m" name="st" id="st">
+        <label for="st" class="st">Mahasiswa</label>
+        <input type="radio" value="d" name="st" id="st">
+        <label for="st" class="st">Dosen</label>
+        <br>
+        <br>
+        <label for="nim">NIM/NIDN :</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" name="nim" id="nim">
+        <br>
+        <br>
+        <label for="nama">Nama Lengkap :</label>&nbsp; &nbsp;
+        <input type="text" name="nama" id="nama">
+        <br>
+        <br>
+        <label for="prodi">Prodi :</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+        <select name="prodi" id="prodi" class="prodi">
+            <option value="SI">Sistem Informasi</option>
+            <option value="TI">Teknik Informatika</option>
+            <option value="BD">Bisnis Digital</option>
+        </select>
+        <br>
+        <br>
+        <label for="jk" class="jk">Jenis Kendaraan :</label>
+        <input type="radio" value="motor" name="jk" id="jk">
+        <label for="jk" class="jk">Motor</label>
+        <input type="radio" value="mobil" name="jk" id="jk">
+        <label for="jk" class="jk">Mobil</label>
+        <br>
+        <br>
+        <label for="nopol">NoPol :</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" name="nopol" id="nopol">
+        <br>
+        <br>
+        <label for="merk">Merk :</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" name="nopol" id="nopol">
+        <br>
+        <br>
+        <label for="fileInput">Upload STNK :</label> &nbsp; &nbsp;
+        <input type="file" id="fileInput" accept="stnk">
+        <label for="pesan">Pesan Anda:</label>
+        <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Daftar" id="daftar" name="daftar">
+    </fieldset>
+</form>
+</body>
+</html>
