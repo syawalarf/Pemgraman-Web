@@ -1,0 +1,45 @@
+h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+#header {
+    background-color: aqua;
+    height: 125px;
+    padding: 5px;
+}
+
+.desk {
+    text-align: center;
+    background-color: gray;
+    margin-bottom: ;
+}
+
+.menu li{
+    display: inline;
+    margin: 40px;
+}
+.menu a{
+    margin-left: 200px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.menu a:hover{
+    font-weight: bold;
+    color: blue;
+}
+
+.gambar {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.isi::first-letter {
+    color: blue;
+    font-size: 40px;
+}
+
+.koleksi {
+    text-align: center;
+}
