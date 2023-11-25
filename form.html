@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigator atas -->
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/travel-logo%2Ctravel-agency-logo%2Ctravel-%26-tour-design-template-e1f616013f08427f3fe8139b972ad93d_screen.jpg?ts=1661851613" width="50px"><a href="">Travelingwall.co</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#req">Rekomended</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- form pemesanan -->
+    <form action="simpan.html" method="post">
+    <div class="wrapper">
+        <section id="home">
+            <div class="custom-file-input">
+                <input type="file" id="fileInput" accept="image">
+                <label for="fileInput">Masukkan Foto Anda disini</label>
+              </div>
+            <div class="kolom">
+                <label for="nama" class="nama">Nama :</label>
+                <input type="text" name="nama" id="nama" style="width: 500px;">
+                <br>
+                <label for="email" class="nam">email :</label>
+                <input type="text" name="email" id="email" style="width: 500px;">
+                <br>
+                <label for="telp" class="na">Nomer Telpon :</label>
+                <input type="text" name="telp" id="telp" style="width: 500px;">
+                <br>
+                <br>
+            <div>
+                <label for="berangkat">berangkat dari :</label>
+                <select name="berangkat" id="berangkat" class="berangkat">
+                    <option value="CGK">Jakarta Soekarno-Hatta</option>
+                    <option value="SRG">Semarang Airport</option>
+                    <option value="BDO">Bandung Airport</option>
+                    <option value="AMQ">Ambon Airport</option>
+                    <option value="BKS">Bengkulu Airport</option>
+                    <option value="SOQ">Sorong Airport</option>
+                    <option value="JOG">Yogyakarta Airport</option>
+                    <option value="MLG">Malang Airport</option>
+                    <option value="PDG">Padang Airport</option>
+                    <option value="MDC">Manado Airport</option>
+                </select>
+                <label for="tujuan">Tujuan :</label>
+                <select name="tujuan" id="tujuan" class="tujuan">
+                    <option value="CGK">Jakarta Soekarno-Hatta</option>
+                    <option value="SRG">Semarang Airport</option>
+                    <option value="BDO">Bandung Airport</option>
+                    <option value="AMQ">Ambon Airport</option>
+                    <option value="BKS">Bengkulu Airport</option>
+                    <option value="SOQ">Sorong Airport</option>
+                    <option value="JOG">Yogyakarta Airport</option>
+                    <option value="MLG">Malang Airport</option>
+                    <option value="PDG">Padang Airport</option>
+                    <option value="MDC">Manado Airport</option>
+                </select>
+                <br>
+                <br>
+                <label for="kk" class="kk">Kelas Kabin :</label>
+                <input type="radio" value="b" name="kk" id="kk">
+                <label for="kk" class="kk">Bisnis</label>
+                <input type="radio" value="e" name="kk" id="kk">
+                <label for="kk" class="kk">Biasa</label>
+                <br>
+                <br>
+                <label for="tanggal" class="tgl">Berangkat :</label>
+                <input type="date" id="tanggal" name="tanggal">
+                <br>
+                <br>
+                <label for="umur" class="umur">Umur :</label>
+                <input type="number" id="umur" name="umur" min="0" max="120">
+                <br>
+                <br>
+                <label for="tiket" class="cl">penumpang :</label>
+                <input type="number" id="tiket" name="tiket" min="0" max="10">
+                <br>
+                <br>
+                <fieldset>
+                <legend>
+                <label for="bag">Bagasi :</label><br>
+                </legend>
+                <input type="checkbox" id="ringan" name="bag" value="ringan">
+                <label for="ringan" class="bag">0 kg - 15 kg</label>
+                <input type="checkbox" id="sedang" name="bag" value="sedang">
+                <label for="sedang" class="bag">16 kg - 30 kg</label>
+                <input type="checkbox" id="berat" name="bag" value="berat">
+                <label for="berat"class="bag">31 kg - 50 kg</label>
+                </fieldset>
+                
+                <br>
+                <label for="catatan">Catatan:</label><br>
+                <textarea id="catatan" name="catatan" rows="4" cols="100"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="simpan" id="simpan" name="simpan">
+            </div>
+            </div>
+        </section>
+    </div>
+    </form>
+
+</body>
+</html>
