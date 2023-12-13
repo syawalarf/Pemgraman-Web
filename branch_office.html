@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Branch</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="./styles/style.css" />
+		<!-- font icons -->
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<!-- ==== Style Switcher ==== -->
+		<link rel="stylesheet" href="./styles/color-1.css" class="alternate-style" title="color-1"disabled>
+		<link rel="stylesheet" href="./styles/color-2.css" class="alternate-style" title="color-2"disabled>
+		<link rel="stylesheet" href="./styles/color-3.css" class="alternate-style" title="color-3"disabled>
+		<link rel="stylesheet" href="./styles/color-4.css" class="alternate-style" title="color-4"disabled>
+		<link rel="stylesheet" href="./styles/color-5.css" class="alternate-style" title="color-5"disabled>
+		<link rel="stylesheet" href="./styles/style-switcher.css">
+		<style>
+			.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+		</style>
+	</head>
+	<body>
+		<section class="top-nav">
+			<div class="logo-nav">
+				<nav id="nav-and-products">
+					<img
+						src="img sepatu/logo_sepatu.jpg"
+						alt=""
+						id="mb"
+						class="menu"
+					/>
+					<div class="products">
+						<div class="main-links">
+							<a  href="index.html" id="coms">Home</a>
+							<a id="games" href="shop.html">Shop</a>
+							<a  href="about.html" id="coms">About Us</a>
+							<a href="contact.html" id="spks">Contact Us</a>	
+							<a  href="branch_office.html" id="coms">branch Office</a>					
+						</div>
+					</div>
+				</nav>
+				<div class="login-cart">
+					<div class="search-section search-web">
+						<input
+							type="search"
+							class="search"
+							name="search"
+							placeholder="Search..."
+							autocomplete="off"
+						/>
+						<!-- <input type="submit" class="go" value="GO" id="GO" /> -->
+						<div class="serc-img">
+							<img
+								src="./IMAGES/search.png"
+								alt=""
+								srcset=""
+							/>
+						</div>
+					</div>
+
+					<div class="cart-box">
+						<img
+							id="cart-img"
+							src="./IMAGES/shopping-cart.png"
+							alt=""
+							srcset=""
+							onclick="toCart()"
+						/>
+						<p id="items-in-cart">beliii</p>
+					</div>
+
+					<div class="account cart-box">
+						<img src="./IMAGES/user.png" id="user-img" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="menu-box" id="menu">
+				<div class="menu-heading">
+					<img class="cancel" onclick="closeMenu()" src="./IMAGES/close.png" />
+				</div>
+			</div>
+		</section>
+		
+		<section id="page-header"class="about-header">
+			<h2>Wall Shoes Memiliki 3 Cabang</h2>
+		</section>
+		<br>
+		<br>
+		<div class="row">
+			<div class="column">
+			  <div class="card">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7930.483138493909!2d106.8354404777099!3d-6.36277389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed6178a2b32f%3A0x20d7938791acfd4a!2sSTT%20Terpadu%20Nurul%20Fikri%20(Kampus%20A%20-%20Sekretariat)!5e0!3m2!1sid!2sid!4v1702382260929!5m2!1sid!2sid" width="420px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="container">
+				  <h2>Cabang 1</h2>
+				  <p class="title">Tugu, Cimanggis</p>
+				  <p>Jl. Setu Indah No.116, Tugu, Kec. Cimanggis, Kota Depok, Jawa Barat 16451</p>
+				  <p>example@example.com</p>
+				  <p><button class="button">Contact</button></p>
+				</div>
+			  </div>
+			</div>
+		  
+			<div class="column">
+			  <div class="card">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7930.635041446171!2d106.82361137770998!3d-6.3529244999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec6b07b68ea5%3A0x17da46bdf9308386!2sSTT%20Terpadu%20Nurul%20Fikri%20-%20Kampus%20B!5e0!3m2!1sid!2sid!4v1702382199405!5m2!1sid!2sid" width="420px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="container">
+				  <h2>Cabang 2</h2>
+				  <p class="title">Lenteng Agung</p>
+				  <p>Jalan Lenteng Agung, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan</p>
+				  <p>example@example.com</p>
+				  <p><button class="button">Contact</button></p>
+				</div>
+			  </div>
+			</div>
+		  
+			<div class="column">
+			  <div class="card">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029815.4214940139!2d104.52296119375002!3d-6.460293499999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ea087b98c63d%3A0xcd3147c40cb36174!2sPerumahan%20Griya%20Asri%20Mandiri!5e0!3m2!1sid!2sid!4v1702381934856!5m2!1sid!2sid" width="420px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="container">
+				  <h2>Cabang 3</h2>
+				  <p class="title">Cibinong</p>
+				  <p>Jl. Al Hawi Pd. Rajeg, Pd. Rajeg, Kec. Cibinong, Kabupaten Bogor, Jawa Barat 16413</p>
+				  <p>example@example.com</p>
+				  <p><button class="button">Contact</button></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <section id="newsletter" class="section-m1 section-p1">
+			<div class="newstext">
+			</div>
+			<div class="form">
+				<input type="text" placeholder="your email address" />
+				<button class="white">Sign up</button>
+			</div>
+		</section>
+
+
+
+		<footer class="section-p1">
+			<div class="col">
+				<img class="logo" src="img sepatu/logo_sepatu.jpg" alt="" />
+				<h4>Contact</h4>
+				<p><strong>Alamat</strong> Perumahan Griya Asri Madiri</p>
+				<p><strong>phone:</strong> 083865527218</p>
+				<p><strong>Hours:</strong> 10:00 - 18:00 , senin - sabtu</p>
+				<div class="follow">
+					<h4>Follow us</h4>
+					<div class="icon">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-pinterest"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="ah">
+				<h4 class="pop">about</h4>
+				<a href="#">About</a>
+				<a href="#">Delivery Information</a>
+				<a href="#">privacy policy</a>
+				<a href="#">Terms & conditions</a>
+				<a href="#">Contact Us</a>
+			    </div>
+			</div>
+			<div class="col">
+				<div class="ah">
+				<h4>MY Account</h4>
+				<a href="#">Sign In</a>
+				<a href="#">View Cart</a>
+				<a href="#">My wishlist</a>
+				<a href="#">Track My Order</a>
+				<a href="#">Help</a>
+		        </div>
+			</div>
+			<div class="col install">
+				<h4>Install App</h4>
+				<p>From App Store or Google Play</p>
+				<div class="row">
+					<img src="img/pay/app.jpg" alt="" />
+					<img src="img/pay/play.jpg" alt="" />
+				</div>
+				<p>Secured Payment Gateways</p>
+				<img src="img/pay/pay.png" alt="" />
+			</div>
+			<div class="copyright">
+				<p><strong>Wall Shoes</strong> Company The Best in World (-_-)</p>
+			</div>
+		</footer>
+				<!-- color themes -->
+				<div class="style-switcher">
+					<div class="style-switcher-toggler s-icon">
+						<i class="fas fa-cog fa-spin"></i>
+					</div>
+					<div class="day-night s-icon">
+						<i class="fas "></i>
+					</div>
+					<h4>Theme colors</h4>
+					<div class="colors">
+						<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+						<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+						<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+						<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+						<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+						<!-- onclick="setActiveStyle" ===> circle-->
+					</div>
+				</div>
+				<!-- ==== style switcher end ==== -->
+				<!-- === JS Files === -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+				referrerpolicy="no-referrer"></script>
+		<script src="script.js"></script>
+					<!-- ==== style switcher end ==== -->
+					<!-- === JS Files === -->
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+					referrerpolicy="no-referrer"></script>
+					<script src="script.js"></script>
+	</body>
+</html>
+

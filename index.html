@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- css style -->
+		<link rel="stylesheet" href="./styles/style.css" />
+		<!-- font icons -->
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<!-- ==== Style Switcher ==== -->
+		<link rel="stylesheet" href="./styles/color-1.css" class="alternate-style" title="color-1"disabled>
+		<link rel="stylesheet" href="./styles/color-2.css" class="alternate-style" title="color-2"disabled>
+		<link rel="stylesheet" href="./styles/color-3.css" class="alternate-style" title="color-3"disabled>
+		<link rel="stylesheet" href="./styles/color-4.css" class="alternate-style" title="color-4"disabled>
+		<link rel="stylesheet" href="./styles/color-5.css" class="alternate-style" title="color-5"disabled>
+		<link rel="stylesheet" href="./styles/style-switcher.css">
+		<style>
+			.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+		</style>
+	</head>
+	<body >
+		<!--  -->
+		<section class="top-nav">
+			<div class="logo-nav">
+				<nav id="nav-and-products">
+					<img
+						src="img sepatu/logo_sepatu.jpg"
+						alt=""
+						id="mb"
+						class="menu"
+					/>
+					>
+					<div class="products">
+						<div class="main-links">
+							<a  href="index.html" id="coms">Home</a>
+							<a id="games" href="shop.html">Shop</a>
+							<a  href="about.html" id="coms">About Us</a>
+							<a href="contact.html" id="spks">Contact Us</a>
+							<a  href="branch_office.html" id="coms">branch Office</a>
+							
+
+						</div>
+					</div>
+				</nav>
+				<div class="login-cart">
+					<div class="search-section search-web">
+						<input
+							type="search"
+							class="search"
+							name="search"
+							placeholder="Search..."
+							autocomplete="off"
+						/>
+						<!-- <input type="submit" class="go" value="GO" id="GO" /> -->
+						<div class="serc-img">
+							<img
+								src="./IMAGES/search.png"
+								alt=""
+								srcset=""
+							/>
+						</div>
+					</div>
+
+					<div class="cart-box">
+						
+						<a  id="lg-bag" href=""><img 	id="cart-img"
+							src="./IMAGES/shopping-cart.png"
+							alt=""
+							srcset=""
+							onclick="toCart()" ></></a>
+						<p id="items-in-cart">0</p>
+					</div>
+
+				</div>
+			</div>
+
+						<div class="hero1">
+							<nav>
+							
+								<img src="img sepatu/wall.jpg" class="user-pic" onclick="toggleMenu()">
+								
+							</nav>
+						</div>
+
+
+<!--													 menu hi 														-->
+			<div class="menu-box" id="menu">
+				<div class="menu-heading">
+					<h1 class="men"></h1>
+					<img class="cancel" onclick="closeMenu()" src="./IMAGES/close.png" />
+				</div>
+				<div class="main-menu">
+					<div class="menu-cat">
+						<h1>Shop By Department</h1>
+						<div id="kk">
+							<a href=""
+								>Cell Phones</a
+							>
+							<a href=""
+								>Televisions</a
+							>
+							<a href=""
+								>Laptops & Computers</a
+							>
+							<a href=""
+								>Speakers</a
+							>
+							<a href=""
+								>Video Games</a
+							>
+						</div>
+					</div>
+					<div class="menu-cat">
+						<h1>Sections</h1>
+						<div id="kk">
+							<a id="link" href="shop.html">Shop</a>
+							<a href="#">Products</a>
+							<a href="#">About Us</a>
+							<a href="#">Contact Us</a>
+						</div>
+					</div>
+					<div class="menu-cat">
+						<h1>Support</h1>
+						<div id="kk">
+							<a href="#">Visit Our Support</a>
+							<a href="#">Online Support</a>
+						</div>
+					</div>
+					<div class="menu-cat">
+						<div>
+							<a href="#" style="border: none; color: red">Logout</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+
+<!-- logo and search  -->
+
+<section class="banner-container">
+	<div class="banner-content">
+		<h1 id="hero-text">Welcome to Wall Shoes</h1>
+		
+	</div>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img class="d-block w-100" src="img sepatu/side-view-man-jumping-outdoors.jpg" alt="First slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="img sepatu/athlete-standing-all-weather-running-track.jpg" alt="Second slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="img sepatu/closeup-jogger-man-near-sea.jpg" alt="Third slide">
+		  </div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div>
+</section>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+<section="product1" class="section-p1>
+		<div class="container2">
+		
+			<div class="header">
+				<h2>Sepatu Olahraga Terbaik</h2>
+			</div>
+		
+			<div class="products">
+				
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0000_clothing-elegance-white-fashion-modern-removebg-preview.png" alt="">
+					</div>
+					
+					<div class="namePrice">
+						<h2>Wall-01</h2>
+						<span>Rp.1.099.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+		
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0001_men-shoes-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-02</h2>
+						<span>Rp.1.299.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+		
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0003_new-pair-white-sneakers-isolated-white-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-03</h2>
+						<span>Rp.1.099.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div><div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0003_new-pair-white-sneakers-isolated-white-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-04</h2>
+						<span>Rp.899.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+		
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0001_men-shoes-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-05</h2>
+						<span>Rp.1.099.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div><div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0000_clothing-elegance-white-fashion-modern-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-06</h2>
+						<span>Rp.1.099.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div><div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0002_sport-running-shoes-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-07</h2>
+						<span>Rp.1.499.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div><div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0003_new-pair-white-sneakers-isolated-white-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-08</h2>
+						<span>Rp.1.299.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div><div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="image">
+						<img src="img sepatu/sepatu_0000_clothing-elegance-white-fashion-modern-removebg-preview.png" alt="">
+					</div>
+					<div class="namePrice">
+						<h2>Wall-09</h2>
+						<span>Rp.1.099.999</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div><div class="bay">
+						<button> bay now </button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<br>
+		<br>
+		</section>
+		<!-- <hr class="hr-rule" /> -->
+		<section id="page-header"class="about-header">
+			<h2>Bisa hubungi kontak di bawah yaa!!!</h2>
+            <p>Belanja sepatu dengang kualitas terbaik</p>
+			
+
+		</section>
+<br>
+<br>
+        <section id="contact-details"class="section-p1">
+            <div class="details">
+                <span>GET IN TOUCH</span>
+                <h2>Visit one of our agency locations or contact us today</h2>
+                <h3>Head Office</h3>
+                <div>
+                    <li>
+                        <i class="fal fa-map"></i>
+                            <p>Jalan Lenteng Agung</p>
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                            <p>syawalarifbillah@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                            <p>083865527218</p>
+                    </li>
+                    <li>
+                        <i class="far fa-clock"></i>
+                            <p>Senin sampai Sabtu: 10.00 to 18.00</p>
+                    </li>
+                </div>
+            </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3175618529626!2d106.83004867450323!3d-6.352919162150851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec6b07b68ea5%3A0x17da46bdf9308386!2sSTT%20Terpadu%20Nurul%20Fikri%20-%20Kampus%20B!5e0!3m2!1sid!2sid!4v1702312091085!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+
+
+
+<br>
+<br>
+		<section>
+		<div class="row">
+			<div class="column">
+			  <div class="card">
+				<img src="img sepatu/2.jpg" alt="Jane" style="width:100%">
+				<div class="container">
+				  <h2>Asep Sutisna</h2>
+				  <p class="title">Art Director</p>
+				  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+				  <p>example@example.com</p>
+				  <p><button class="button">Contact</button></p>
+				</div>
+			  </div>
+			</div>
+		  
+			<div class="column">
+			  <div class="card">
+				<img src="img sepatu/1.jpg" alt="Mike" style="width:100%">
+				<div class="container">
+				  <h2>Muhammad Syawal Arif Billah</h2>
+				  <p class="title">CEO &amp; Founder</p>
+				  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+				  <p>example@example.com</p>
+				  <p><button class="button">Contact</button></p>
+				</div>
+			  </div>
+			</div>
+		  
+			<div class="column">
+			  <div class="card">
+				<img src="img sepatu/3.jpg" alt="John" style="width:100%">
+				<div class="container">
+				  <h2>Hilabi Fatir</h2>
+				  <p class="title">Designer</p>
+				  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+				  <p>example@example.com</p>
+				  <p><button class="button">Contact</button></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>		
+<section id="about">
+			<div class="about-text-container">
+				<div class="aat">
+					<h1>We Serve You The Best Product At Best Prices</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+						voluptatem minus officia quas reiciendis excepturi nostrum esse
+						itaque nesciunt.
+					</p>
+				</div>
+				<div class="about-boxes">
+					<div class="ab">
+						<div class="about-box">
+							<div class="abimg">
+								<img
+								src="IMAGES/delivery.png"
+								alt=""
+								id="a-icon"
+								class="a-icon"
+								/>
+								<h2>Free Shipping</h2>
+							</div>
+							<div class="a-text">
+								<p>Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+						<div class="about-box">
+							<div class="abimg">
+								<img
+								src="IMAGES/credit-card(1).png"
+								alt=""
+								class="a-icon"
+								/>
+								<h2>Secured Payments</h2>
+							</div>
+							<div class="a-text">
+								<p>Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
+						</div>
+						<div class="about-box">
+							<div class="abimg">
+								<img
+								src="IMAGES/24-hours-support.png"
+								alt=""
+								class="a-icon"
+								/>
+								<h2>24/7 Online Support</h2>
+							</div>
+							<div class="a-text">
+								<p>Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
+						</div>
+						
+						<div class="about-box">
+							<div class="abimg">
+								<img src="IMAGES/exchange.png" alt="" class="a-icon" />
+								<h2>Free Returns</h2>
+							</div>
+							<div class="a-text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+</section>
+		
+		<!-- color themes -->
+<div class="style-switcher">
+		<div class="style-switcher-toggler s-icon">
+			<i class="fas fa-cog fa-spin"></i>
+		</div>
+		<div class="day-night s-icon">
+			<i class="fas "></i>
+		</div>
+		<h4>Theme colors</h4>
+		<div class="colors">
+			<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+			<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+			<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+			<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+			<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+				<!-- onclick="setActiveStyle" ===> circle-->
+			</div>
+
+
+
+</div>
+		<!-- ==== style switcher end ==== -->
+		<!-- === JS Files === -->
+		<span class="up"></span>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+		referrerpolicy="no-referrer"></script>
+		<script src="script.js"></script>
+		<script>
+			let subMenu = document.getElementById('subMenu');
+			function toggleMenu(){
+				subMenu.classList.toggle('open-menu')
+			}
+		</script>
+	</body>
+	</html>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
